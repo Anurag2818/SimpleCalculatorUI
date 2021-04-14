@@ -1,0 +1,33 @@
+<html>
+
+<head>
+  <title>Simple Calculator</title>
+</head>
+
+<body class="calc">
+  <h1>Simple Calculator App</h1>
+  <div class="">
+    <input name="firstOperator" [(ngModel)]="firstOperator" type="number" (keypress)="onlyDigits($event)">
+    <span [(ngModel)]="selectedOperation">{{selectedOperation}}</span>
+    <input name="secondOperator" [(ngModel)]="secondOperator" type="number" (keypress)="onlyDigits($event)">
+    <span> = {{operationResult}}</span>
+    <p>
+      Choose Operation:
+      <button class="calc-operationbutton" (click)="add()">+</button>
+      <button class="calc-operationbutton" (click)="sub()">-</button>
+      <button class="calc-operationbutton" (click)="multiply()">*</button>
+      <button class="calc-operationbutton" (click)="divide()">/</button>
+    </p>
+  </div>
+
+  <div>
+    <button class="calc-button" (click)="history()">History</button>
+    <button class="calc-button" (click)="reset()">Clear</button>
+  </div>
+
+  <div *ngFor="let history of simpleCalculator" class="text-center">
+    {{history.firstOperand}} {{history.operation}} {{history.secondOperand}} = {{history.operationResult}}
+  </div>
+</body>
+
+</html>

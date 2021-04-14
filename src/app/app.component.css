@@ -1,0 +1,29 @@
+.calc {
+    margin: 80px auto;
+    padding: 30px;
+    width: 400px;
+    background: #d6ae71;
+    border: 1px solid #222;
+    border-radius: 10px;
+    -webkit-box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.1), 0 0 4px rgba(0, 0, 0, 0.5);
+    box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.1), 0 0 4px rgba(0, 0, 0, 0.5);
+  }
+
+  .calc-operationbutton {
+    background: #aac437;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 5px 5px;
+    width: 40px;
+    border-radius: 10px;
+  }
+
+  .calc-button {
+    background: #afcc47;
+    font-size: 10px;
+    align-items: center;
+    font-weight: bold;
+    padding: 5px 5px;
+    width: 50px;
+    border-radius: 12px;
+  }

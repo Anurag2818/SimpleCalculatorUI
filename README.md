@@ -14,7 +14,7 @@ Run `ng build` to build the project. The build artifacts will be stored in the `
 ## Functionality
 
 This project is implemented for calculating below operation:
-   <li>JAddition</li>
+   <li>Addition</li>
    <li>Substraction</li>
    <li>Multiplication</li>
    <li>Division</li>
